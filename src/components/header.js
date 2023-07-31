@@ -153,7 +153,7 @@ export default function Header(props) {
       )}
     </Disclosure>
     
-    <div className ="bg-gray-300 min-h-screen p-2">{props.children}</div>
+    <div className ="bg-gray-300 min-h-screen p-3">{props.children}</div>
     </>
   );
 }
