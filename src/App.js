@@ -5,6 +5,8 @@ import Employees from "./pages/Employees";
 import Dictionary from "./pages/Dictionary";
 import Definition from "./pages/Definition";
 import NotFound from "./components/notFound";
+import Customers from "./pages/Customers";
+import Customer from "./pages/Customer";
 
 function App() {
   return (
@@ -12,10 +14,12 @@ function App() {
       <Header>
         <Routes>
           <Route path="/employees" element={<Employees />} />
+          <Route path="/customers" element={<Customers />} />
+          <Route path="/customers/:id" element={<Customer />} />
           <Route path="/404" element={<NotFound />} />
-          <Route path="/definition/:search" element={<Definition />} />
+          <Route path="/dictionary/:search" element={<Definition />} />
           <Route path="/dictionary" element={<Dictionary />} />
-          <Route path="*" element={<notFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Header>
     </BrowserRouter>
